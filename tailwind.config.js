@@ -1,8 +1,7 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
-  // purge: ['./dist/**/*.css'],
-  purge: false,
+  purge: ["./dist/**/*.css"],
   plugins: [require("@tailwindcss/custom-forms")],
   theme: {
     extend: {
@@ -11,4 +10,4 @@ module.exports = {
       },
     },
   },
-};
+}

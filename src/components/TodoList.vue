@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 flex">
+  <div class="p-4 flex flex-col sm:flex-row">
     <div class="p-4">
       <div class="bg-gray-200 p-4 rounded mb-4">
         <h2 class="mb-2 font-bold text-xl text-indigo-800">Add a todo</h2>
@@ -7,7 +7,7 @@
           @keypress.enter="addTodo"
           v-model="newTodo"
           :class="errorMessage.length ? 'border border-red-400' : ''"
-          class="form-input mb-4 outline-none focus:outline-none"
+          class="w-full form-input mb-4 outline-none focus:outline-none"
         />
         <div id="error" v-if="errorMessage.length">{{ errorMessage }}</div>
       </div>
