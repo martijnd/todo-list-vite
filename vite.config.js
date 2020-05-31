@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: "/todo-list-vite/",
+  base: "/todo-list-vite/",
 }
